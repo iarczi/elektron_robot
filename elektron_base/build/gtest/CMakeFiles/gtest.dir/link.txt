@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libgtest.so -o /home/alatosze/ros_workspace/elektron_robot/elektron_base/lib/libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o -L/home/alatosze/ros_workspace/elektron_robot/elektron_base/build/gtest/src -lpthread -Wl,-rpath,/home/alatosze/ros_workspace/elektron_robot/elektron_base/build/gtest/src 

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/devel/setup.sh
