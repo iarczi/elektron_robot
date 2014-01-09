@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robot/ros/elektron_robot/elektron_base/src/nf/../nfv2_config.h
+
+/home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.c
+nfv2.h
+/home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.h
+
+/home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.h
+inttypes.h
+-
+../nfv2_config.h
+/home/robot/ros/elektron_robot/elektron_base/src/nf/../nfv2_config.h
+
+/home/robot/ros/elektron_robot/elektron_base/src/nfv2_config.c
+stdio.h
+/home/robot/ros/elektron_robot/elektron_base/src/stdio.h
+nf/nfv2.h
+/home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.h
+

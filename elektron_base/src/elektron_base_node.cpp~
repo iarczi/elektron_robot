@@ -205,7 +205,7 @@ int main(int argc, char** argv) {
 			odom.twist.twist.angular.z = thvel;
 
 			//publish the message
-			odom_pub.publish(odom);
+//			odom_pub.publish(odom);
 
 			ros::spinOnce();
 			loop_rate.sleep();
