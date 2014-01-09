@@ -31,11 +31,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+<<<<<<< HEAD
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robot/ros/elektron_robot/elektron_base
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/robot/ros/elektron_robot/elektron_base/build
+=======
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
+# The top-level source directory on which CMake was run.
+CMAKE_SOURCE_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base/build
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 
 # Utility rule file for rospack_genmsg.
 
@@ -57,6 +68,10 @@ CMakeFiles/rospack_genmsg.dir/clean:
 .PHONY : CMakeFiles/rospack_genmsg.dir/clean
 
 CMakeFiles/rospack_genmsg.dir/depend:
+<<<<<<< HEAD
 	cd /home/robot/ros/elektron_robot/elektron_base/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/ros/elektron_robot/elektron_base /home/robot/ros/elektron_robot/elektron_base /home/robot/ros/elektron_robot/elektron_base/build /home/robot/ros/elektron_robot/elektron_base/build /home/robot/ros/elektron_robot/elektron_base/build/CMakeFiles/rospack_genmsg.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/alatosze/ros_workspace/elektron_robot/elektron_base/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alatosze/ros_workspace/elektron_robot/elektron_base /home/alatosze/ros_workspace/elektron_robot/elektron_base /home/alatosze/ros_workspace/elektron_robot/elektron_base/build /home/alatosze/ros_workspace/elektron_robot/elektron_base/build /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles/rospack_genmsg.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 .PHONY : CMakeFiles/rospack_genmsg.dir/depend
 

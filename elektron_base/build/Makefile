@@ -35,25 +35,85 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+<<<<<<< HEAD
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robot/ros/elektron_robot/elektron_base
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/robot/ros/elektron_robot/elektron_base/build
+=======
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
+# The top-level source directory on which CMake was run.
+CMAKE_SOURCE_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base/build
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
 	/usr/bin/cmake -i .
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+<<<<<<< HEAD
+=======
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -66,9 +126,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/ros/elektron_robot/elektron_base/build/CMakeFiles /home/robot/ros/elektron_robot/elektron_base/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/ros/elektron_robot/elektron_base/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles 0
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 .PHONY : all
 
 # The main clean target
@@ -148,6 +214,7 @@ ROSBUILD_gensrv_lisp/fast:
 .PHONY : ROSBUILD_gensrv_lisp/fast
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named clean-test-results
 
 # Build rule for target.
@@ -159,6 +226,45 @@ clean-test-results: cmake_check_build_system
 clean-test-results/fast:
 	$(MAKE) -f CMakeFiles/clean-test-results.dir/build.make CMakeFiles/clean-test-results.dir/build
 .PHONY : clean-test-results/fast
+=======
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 
 #=============================================================================
 # Target rules for targets named elektron_base_node
@@ -174,6 +280,22 @@ elektron_base_node/fast:
 .PHONY : elektron_base_node/fast
 
 #=============================================================================
+<<<<<<< HEAD
+=======
+# Target rules for targets named rosbuild_clean-test-results
+
+# Build rule for target.
+rosbuild_clean-test-results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosbuild_clean-test-results
+.PHONY : rosbuild_clean-test-results
+
+# fast build rule for target.
+rosbuild_clean-test-results/fast:
+	$(MAKE) -f CMakeFiles/rosbuild_clean-test-results.dir/build.make CMakeFiles/rosbuild_clean-test-results.dir/build
+.PHONY : rosbuild_clean-test-results/fast
+
+#=============================================================================
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 # Target rules for targets named rosbuild_precompile
 
 # Build rule for target.
@@ -239,6 +361,22 @@ rospack_gensrv/fast:
 .PHONY : rospack_gensrv/fast
 
 #=============================================================================
+<<<<<<< HEAD
+=======
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 # Target rules for targets named test
 
 # Build rule for target.
@@ -303,6 +441,7 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+<<<<<<< HEAD
 # target to build an object file
 src/elektron_base_node.o:
 	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o
@@ -363,6 +502,130 @@ src/serialcomm/serialcomm.s:
 	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.s
 .PHONY : src/serialcomm/serialcomm.s
 
+=======
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+src/elektron_base_node.o: src/elektron_base_node.cpp.o
+.PHONY : src/elektron_base_node.o
+
+# target to build an object file
+src/elektron_base_node.cpp.o:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o
+.PHONY : src/elektron_base_node.cpp.o
+
+src/elektron_base_node.i: src/elektron_base_node.cpp.i
+.PHONY : src/elektron_base_node.i
+
+# target to preprocess a source file
+src/elektron_base_node.cpp.i:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.i
+.PHONY : src/elektron_base_node.cpp.i
+
+src/elektron_base_node.s: src/elektron_base_node.cpp.s
+.PHONY : src/elektron_base_node.s
+
+# target to generate assembly for a file
+src/elektron_base_node.cpp.s:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.s
+.PHONY : src/elektron_base_node.cpp.s
+
+src/nf/nfv2.o: src/nf/nfv2.c.o
+.PHONY : src/nf/nfv2.o
+
+# target to build an object file
+src/nf/nfv2.c.o:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o
+.PHONY : src/nf/nfv2.c.o
+
+src/nf/nfv2.i: src/nf/nfv2.c.i
+.PHONY : src/nf/nfv2.i
+
+# target to preprocess a source file
+src/nf/nfv2.c.i:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.i
+.PHONY : src/nf/nfv2.c.i
+
+src/nf/nfv2.s: src/nf/nfv2.c.s
+.PHONY : src/nf/nfv2.s
+
+# target to generate assembly for a file
+src/nf/nfv2.c.s:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.s
+.PHONY : src/nf/nfv2.c.s
+
+src/nfv2_config.o: src/nfv2_config.c.o
+.PHONY : src/nfv2_config.o
+
+# target to build an object file
+src/nfv2_config.c.o:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o
+.PHONY : src/nfv2_config.c.o
+
+src/nfv2_config.i: src/nfv2_config.c.i
+.PHONY : src/nfv2_config.i
+
+# target to preprocess a source file
+src/nfv2_config.c.i:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.i
+.PHONY : src/nfv2_config.c.i
+
+src/nfv2_config.s: src/nfv2_config.c.s
+.PHONY : src/nfv2_config.s
+
+# target to generate assembly for a file
+src/nfv2_config.c.s:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.s
+.PHONY : src/nfv2_config.c.s
+
+src/serialcomm/serialcomm.o: src/serialcomm/serialcomm.cpp.o
+.PHONY : src/serialcomm/serialcomm.o
+
+# target to build an object file
+src/serialcomm/serialcomm.cpp.o:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o
+.PHONY : src/serialcomm/serialcomm.cpp.o
+
+src/serialcomm/serialcomm.i: src/serialcomm/serialcomm.cpp.i
+.PHONY : src/serialcomm/serialcomm.i
+
+# target to preprocess a source file
+src/serialcomm/serialcomm.cpp.i:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.i
+.PHONY : src/serialcomm/serialcomm.cpp.i
+
+src/serialcomm/serialcomm.s: src/serialcomm/serialcomm.cpp.s
+.PHONY : src/serialcomm/serialcomm.s
+
+# target to generate assembly for a file
+src/serialcomm/serialcomm.cpp.s:
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.s
+.PHONY : src/serialcomm/serialcomm.cpp.s
+
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -373,20 +636,43 @@ help:
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
+<<<<<<< HEAD
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... elektron_base_node"
 	@echo "... rebuild_cache"
+=======
+	@echo "... _catkin_empty_exported_target"
+	@echo "... clean_test_results"
+	@echo "... doxygen"
+	@echo "... edit_cache"
+	@echo "... elektron_base_node"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... rosbuild_clean-test-results"
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
+<<<<<<< HEAD
+=======
+	@echo "... run_tests"
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+<<<<<<< HEAD
+=======
+	@echo "... gtest"
+	@echo "... gtest_main"
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 	@echo "... src/elektron_base_node.o"
 	@echo "... src/elektron_base_node.i"
 	@echo "... src/elektron_base_node.s"

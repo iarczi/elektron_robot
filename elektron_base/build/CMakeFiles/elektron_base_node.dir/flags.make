@@ -3,6 +3,7 @@
 
 # compile C with /usr/bin/gcc
 # compile CXX with /usr/bin/c++
+<<<<<<< HEAD
 C_FLAGS = -O3 -DNDEBUG -I/home/robot/ros/elektron_robot/elektron_base/include -I/opt/ros/fuerte/include -I/opt/ros/fuerte/stacks/geometry/tf/include -I/opt/ros/fuerte/stacks/geometry/tf/msg_gen/cpp/include -I/opt/ros/fuerte/stacks/geometry/tf/srv_gen/cpp/include -I/opt/ros/fuerte/stacks/bullet/include -I/opt/ros/fuerte/stacks/geometry/angles/include    -DROS_PACKAGE_NAME='"elektron_base"'
 
 C_DEFINES = 
@@ -12,4 +13,15 @@ CXX_FLAGS = -O3 -DNDEBUG -I/home/robot/ros/elektron_robot/elektron_base/include 
 CXX_DEFINES = 
 
 # TARGET_FLAGS = -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread
+=======
+C_FLAGS = -O3 -DNDEBUG -I/home/alatosze/ros_workspace/elektron_robot/elektron_base/include -I/opt/ros/groovy/include    -DROS_PACKAGE_NAME='"elektron_base"'
+
+C_DEFINES = 
+
+CXX_FLAGS = -O3 -DNDEBUG -I/home/alatosze/ros_workspace/elektron_robot/elektron_base/include -I/opt/ros/groovy/include    -DROS_PACKAGE_NAME='"elektron_base"'
+
+CXX_DEFINES = 
+
+# TARGET_FLAGS = -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 

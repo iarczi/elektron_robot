@@ -31,11 +31,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+<<<<<<< HEAD
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robot/ros/elektron_robot/elektron_base
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/robot/ros/elektron_robot/elektron_base/build
+=======
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
+# The top-level source directory on which CMake was run.
+CMAKE_SOURCE_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/alatosze/ros_workspace/elektron_robot/elektron_base/build
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 
 # Include any dependencies generated for this target.
 include CMakeFiles/elektron_base_node.dir/depend.make
@@ -46,6 +57,7 @@ include CMakeFiles/elektron_base_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/elektron_base_node.dir/flags.make
 
+<<<<<<< HEAD
 CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o: CMakeFiles/elektron_base_node.dir/flags.make
 CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o: ../src/elektron_base_node.cpp
 CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o: ../manifest.xml
@@ -208,14 +220,209 @@ elektron_base_node_OBJECTS = \
 "CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.o" \
 "CMakeFiles/elektron_base_node.dir/src/nf/nfv2.o" \
 "CMakeFiles/elektron_base_node.dir/src/nfv2_config.o"
+=======
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: CMakeFiles/elektron_base_node.dir/flags.make
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: ../src/elektron_base_node.cpp
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: ../manifest.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/cpp_common/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/rostime/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/roscpp_traits/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/roscpp_serialization/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/genmsg/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/genpy/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/message_runtime/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/rosconsole/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/std_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/rosgraph_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/xmlrpcpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/roscpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/geometry_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/gencpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/genlisp/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/message_generation/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/actionlib_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/nav_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/message_filters/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/sensor_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o: /opt/ros/groovy/share/tf/package.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o -c /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/elektron_base_node.cpp
+
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/elektron_base_node.cpp > CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.i
+
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/elektron_base_node.cpp -o CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.s
+
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.requires:
+.PHONY : CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.requires
+
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.provides: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.provides.build
+.PHONY : CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.provides
+
+CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.provides.build: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: CMakeFiles/elektron_base_node.dir/flags.make
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: ../src/serialcomm/serialcomm.cpp
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: ../manifest.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/cpp_common/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/rostime/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/roscpp_traits/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/roscpp_serialization/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/genmsg/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/genpy/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/message_runtime/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/rosconsole/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/std_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/rosgraph_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/xmlrpcpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/roscpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/geometry_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/gencpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/genlisp/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/message_generation/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/actionlib_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/nav_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/message_filters/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/sensor_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o: /opt/ros/groovy/share/tf/package.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o -c /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/serialcomm/serialcomm.cpp
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/serialcomm/serialcomm.cpp > CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.i
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/serialcomm/serialcomm.cpp -o CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.s
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.requires:
+.PHONY : CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.requires
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.provides: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.requires
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.provides.build
+.PHONY : CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.provides
+
+CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.provides.build: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: CMakeFiles/elektron_base_node.dir/flags.make
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: ../src/nf/nfv2.c
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: ../manifest.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/cpp_common/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/rostime/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/roscpp_traits/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/roscpp_serialization/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/genmsg/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/genpy/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/message_runtime/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/rosconsole/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/std_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/rosgraph_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/xmlrpcpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/roscpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/geometry_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/gencpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/genlisp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/message_generation/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/actionlib_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/nav_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/message_filters/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/sensor_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o: /opt/ros/groovy/share/tf/package.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o   -c /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nf/nfv2.c
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nf/nfv2.c > CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.i
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nf/nfv2.c -o CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.s
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.requires:
+.PHONY : CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.requires
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.provides: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.requires
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.provides.build
+.PHONY : CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.provides
+
+CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.provides.build: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: CMakeFiles/elektron_base_node.dir/flags.make
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: ../src/nfv2_config.c
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: ../manifest.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/cpp_common/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/rostime/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/roscpp_traits/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/roscpp_serialization/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/genmsg/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/genpy/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/message_runtime/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/rosconsole/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/std_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/rosgraph_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/xmlrpcpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/roscpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/geometry_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/gencpp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/genlisp/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/message_generation/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/actionlib_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/nav_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/message_filters/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/sensor_msgs/package.xml
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o: /opt/ros/groovy/share/tf/package.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o   -c /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nfv2_config.c
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nfv2_config.c > CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.i
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/alatosze/ros_workspace/elektron_robot/elektron_base/src/nfv2_config.c -o CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.s
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.requires:
+.PHONY : CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.requires
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.provides: CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.requires
+	$(MAKE) -f CMakeFiles/elektron_base_node.dir/build.make CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.provides.build
+.PHONY : CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.provides
+
+CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.provides.build: CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o
+
+# Object files for target elektron_base_node
+elektron_base_node_OBJECTS = \
+"CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o" \
+"CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o" \
+"CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o" \
+"CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o"
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 
 # External object files for target elektron_base_node
 elektron_base_node_EXTERNAL_OBJECTS =
 
+<<<<<<< HEAD
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.o
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.o
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/nfv2_config.o
+=======
+../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o
+../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o
+../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o
+../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/build.make
 ../bin/elektron_base_node: CMakeFiles/elektron_base_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/elektron_base_node"
@@ -225,10 +432,17 @@ elektron_base_node_EXTERNAL_OBJECTS =
 CMakeFiles/elektron_base_node.dir/build: ../bin/elektron_base_node
 .PHONY : CMakeFiles/elektron_base_node.dir/build
 
+<<<<<<< HEAD
 CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.o.requires
 CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.o.requires
 CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.o.requires
 CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/nfv2_config.o.requires
+=======
+CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/elektron_base_node.cpp.o.requires
+CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/serialcomm/serialcomm.cpp.o.requires
+CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/nf/nfv2.c.o.requires
+CMakeFiles/elektron_base_node.dir/requires: CMakeFiles/elektron_base_node.dir/src/nfv2_config.c.o.requires
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 .PHONY : CMakeFiles/elektron_base_node.dir/requires
 
 CMakeFiles/elektron_base_node.dir/clean:
@@ -236,6 +450,10 @@ CMakeFiles/elektron_base_node.dir/clean:
 .PHONY : CMakeFiles/elektron_base_node.dir/clean
 
 CMakeFiles/elektron_base_node.dir/depend:
+<<<<<<< HEAD
 	cd /home/robot/ros/elektron_robot/elektron_base/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/ros/elektron_robot/elektron_base /home/robot/ros/elektron_robot/elektron_base /home/robot/ros/elektron_robot/elektron_base/build /home/robot/ros/elektron_robot/elektron_base/build /home/robot/ros/elektron_robot/elektron_base/build/CMakeFiles/elektron_base_node.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/alatosze/ros_workspace/elektron_robot/elektron_base/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alatosze/ros_workspace/elektron_robot/elektron_base /home/alatosze/ros_workspace/elektron_robot/elektron_base /home/alatosze/ros_workspace/elektron_robot/elektron_base/build /home/alatosze/ros_workspace/elektron_robot/elektron_base/build /home/alatosze/ros_workspace/elektron_robot/elektron_base/build/CMakeFiles/elektron_base_node.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 .PHONY : CMakeFiles/elektron_base_node.dir/depend
 
