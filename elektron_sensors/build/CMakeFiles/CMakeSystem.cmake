@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 INCLUDE("/opt/ros/fuerte/share/ros/core/rosbuild/rostoolchain.cmake")
 
 SET(CMAKE_SYSTEM "Linux-3.2.0-29-generic")
@@ -9,18 +8,6 @@ SET(CMAKE_SYSTEM_PROCESSOR "x86_64")
 SET(CMAKE_HOST_SYSTEM "Linux-3.2.0-29-generic")
 SET(CMAKE_HOST_SYSTEM_NAME "Linux")
 SET(CMAKE_HOST_SYSTEM_VERSION "3.2.0-29-generic")
-=======
-INCLUDE("/opt/ros/groovy/share/ros/core/rosbuild/rostoolchain.cmake")
-
-SET(CMAKE_SYSTEM "Linux-3.5.0-42-generic")
-SET(CMAKE_SYSTEM_NAME "Linux")
-SET(CMAKE_SYSTEM_VERSION "3.5.0-42-generic")
-SET(CMAKE_SYSTEM_PROCESSOR "x86_64")
-
-SET(CMAKE_HOST_SYSTEM "Linux-3.5.0-42-generic")
-SET(CMAKE_HOST_SYSTEM_NAME "Linux")
-SET(CMAKE_HOST_SYSTEM_VERSION "3.5.0-42-generic")
->>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
 SET(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 SET(CMAKE_CROSSCOMPILING "FALSE")

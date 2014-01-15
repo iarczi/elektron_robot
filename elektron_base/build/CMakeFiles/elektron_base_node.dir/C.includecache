@@ -6,7 +6,6 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
 /home/robot/ros/elektron_robot/elektron_base/src/nf/../nfv2_config.h
 
 /home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.c
@@ -25,5 +24,3 @@ stdio.h
 nf/nfv2.h
 /home/robot/ros/elektron_robot/elektron_base/src/nf/nfv2.h
 
-=======
->>>>>>> 4e19b7f91b6b2bc8835c7b796a6e3416f986d5e4
